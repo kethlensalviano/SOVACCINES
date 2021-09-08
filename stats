@@ -1,0 +1,50 @@
+Process Statistics: 
+	Client 0 received 1 requests! 
+	Proxy 0 forwarded 1 requests! 
+	Server 0 responded to 1 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-05-02 20:23:00.027 
+Client_time: 2021-05-02 20:23:00.034 
+Proxy_time: 2021-05-02 20:23:00.039 
+Server_time: 2021-05-02 20:23:00.045 
+Ended: 2021-05-02 20:23:00.049 
+Total Time: 0.022461 
+-----------------------------------------------------------------------
+Process Statistics: 
+	Client 0 received 2 requests! 
+	Proxy 0 forwarded 2 requests! 
+	Server 0 responded to 2 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-05-02 20:23:20.289 
+Client_time: 2021-05-02 20:23:20.296 
+Proxy_time: 2021-05-02 20:23:20.302 
+Server_time: 2021-05-02 20:23:20.307 
+Ended: 2021-05-02 20:23:20.311 
+Total Time: 0.021749 
+
+OP: 1 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-05-02 20:23:21.203 
+Client_time: 2021-05-02 20:23:21.204 
+Proxy_time: 2021-05-02 20:23:21.204 
+Server_time: 2021-05-02 20:23:21.204 
+Ended: 2021-05-02 20:23:21.204 
+Total Time: 0.000395 
+-----------------------------------------------------------------------
