@@ -34,29 +34,29 @@ void write_statistics_file() {
     }
 
     if(fputs("Process Statistics: \n", ficheiro) < 0) {
-        printf("Erro na escrita das estatisticas\n");
+        printf("Error writing statistics\n");
     }
 
     for(int i = 0; i < data->n_clients; i++){
         if(fprintf(ficheiro, "\tClient %d received %d requests! \n", i, *(data->client_stats + i)) < 0) {
-            printf("Erro na escrita das estatisticas\n");
+            printf("Error writing statistics\n");
         }
     }
 
     for(int i = 0; i < data->n_proxies; i++){
         if(fprintf(ficheiro, "\tProxy %d forwarded %d requests! \n", i, *(data->proxy_stats + i)) < 0) {
-            printf("Erro na escrita das estatisticas\n");
+            printf("Error writing statistics\n");
         }
     }
     
     for(int i = 0; i < data->n_servers; i++){
         if(fprintf(ficheiro, "\tServer %d responded to %d requests! \n", i, *(data->server_stats + i)) < 0) {
-            printf("Erro na escrita das estatisticas\n");
+            printf("Error writing statistics\n");
         }
     }
 
     if(fputs("\nOperation Statistics: \n", ficheiro) < 0) {
-        printf("Erro na escrita das estatisticas\n");
+        printf("Error writing statistics\n");
     }
 
     for (int i = 0; i < data->max_ops; i++) {
@@ -81,7 +81,7 @@ void write_statistics_file() {
         }
     }
     if(fputs("-----------------------------------------------------------------------\n", ficheiro) < 0) {
-        printf("Erro na escrita das estatisticas\n");
+        printf("Error writing statistics\n");
     }
 
     fclose(ficheiro);

@@ -48,3 +48,79 @@ Server_time: 2021-05-02 20:23:21.204
 Ended: 2021-05-02 20:23:21.204 
 Total Time: 0.000395 
 -----------------------------------------------------------------------
+Process Statistics: 
+	Client 0 received 1 requests! 
+	Proxy 0 forwarded 1 requests! 
+	Server 0 responded to 1 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-09-11 13:25:31.622 
+Client_time: 2021-09-11 13:25:31.622 
+Proxy_time: 2021-09-11 13:25:31.622 
+Server_time: 2021-09-11 13:25:31.622 
+Ended: 2021-09-11 13:25:31.623 
+Total Time: 0.000564 
+-----------------------------------------------------------------------
+Process Statistics: 
+	Client 0 received 1 requests! 
+	Proxy 0 forwarded 1 requests! 
+	Server 0 responded to 1 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-09-11 13:25:59.132 
+Client_time: 2021-09-11 13:25:59.132 
+Proxy_time: 2021-09-11 13:25:59.132 
+Server_time: 2021-09-11 13:25:59.132 
+Ended: 2021-09-11 13:25:59.133 
+Total Time: 0.000261 
+-----------------------------------------------------------------------
+Process Statistics: 
+	Client 0 received 1 requests! 
+	Proxy 0 forwarded 1 requests! 
+	Server 0 responded to 1 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-09-11 13:29:19.320 
+Client_time: 2021-09-11 13:29:19.320 
+Proxy_time: 2021-09-11 13:29:19.320 
+Server_time: 2021-09-11 13:29:19.320 
+Ended: 2021-09-11 13:29:19.320 
+Total Time: 0.000272 
+-----------------------------------------------------------------------
+Process Statistics: 
+	Client 0 received 1 requests! 
+	Proxy 0 forwarded 1 requests! 
+	Server 0 responded to 1 requests! 
+
+Operation Statistics: 
+
+OP: 0 
+Status: S 
+Client_id: 0 
+Proxy_id: 0 
+Server_id: 0 
+Created: 2021-09-11 13:31:51.977 
+Client_time: 2021-09-11 13:31:51.977 
+Proxy_time: 2021-09-11 13:31:51.977 
+Server_time: 2021-09-11 13:31:51.977 
+Ended: 2021-09-11 13:31:51.977 
+Total Time: 0.000296 
+-----------------------------------------------------------------------

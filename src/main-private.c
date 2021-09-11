@@ -35,11 +35,11 @@ int validateInputs(int argc, char ** argv){
 */
 void print_menu(){
 
-    printf("\nAções disponíveis: \n");
-    printf("\t op – criar um pedido de aquisição de vacinas \n");
-    printf("\t read – consultar o estado de um dado pedido (especificado pelo utilizador) \n");
-    printf("\t stop – terminar a execução do sistema SOVACCINES \n");
-    printf("\t help – mostrar as informações de ajuda sobre as opções anteriores \n");
+    printf("\nAvailable actions: \n");
+    printf("\t op – create vaccine request \n");
+    printf("\t read – checks the status of a request (specified by the user) \n");
+    printf("\t stop – terminates SOVACCINES execution \n");
+    printf("\t help – shows menu options and descriptions \n");
 
 }
 

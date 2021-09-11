@@ -37,8 +37,7 @@ int main(int argc, char **argv) {
         exit(-1);
     }
     if (argc != 2){
-        printf("Uso: sovaccines nome_ficheiro \n");
-        printf("Exemplo: ./bin/sovaccines teste\n");
+        printf("Example: ./bin/sovaccines config\n");
         return -1;
     }
 
@@ -183,7 +182,7 @@ void user_interaction(struct communication_buffers* buffers, struct main_data* d
 
     while(connected == 1){
         usleep(10000);
-        printf("Introduzir ação: \n");
+        printf("Choose an option: \n");
 
         scanf("%s", input);
 
@@ -211,7 +210,7 @@ void user_interaction(struct communication_buffers* buffers, struct main_data* d
                 print_menu();
                 break;
             default:
-                printf("Ação não reconhecida, insira 'help' para assistência. \n");
+                printf("Option not recognized, insert 'help' for assistance. \n");
             break;
 
         }
@@ -236,12 +235,12 @@ void create_request(int* op_counter, struct communication_buffers* buffers, stru
             produce_begin(sems->main_cli);
             write_rnd_access_buffer(buffers->main_cli, data->buffers_size, op);
             produce_end(sems->main_cli);
-            printf("O pedido #%d foi criado! \n", op->id);
+            printf("Request #%d was created! \n", op->id);
             (*op_counter)++;
             free(op);
         }
     } else {
-        printf("O número máximo de pedidos foi alcançado! \n");
+        printf("Max number of requests was reached! \n");
     }
 
 };
@@ -264,7 +263,7 @@ void read_answer(struct main_data* data, struct semaphores* sems){
     clock_gettime(CLOCK_REALTIME, &time);
     
     if(check != 1){
-        printf("id de operação fornecido é inválido! \n");
+        printf("invalid operation id! \n");
         scanf("%s", input);
         sprintf(log, "%s %s", "read", input);
         write_log(getTime(time), log);
@@ -275,11 +274,11 @@ void read_answer(struct main_data* data, struct semaphores* sems){
         write_log(getTime(time), log);
         semaphore_mutex_lock(sems->results_mutex);
         if(n_op == (data->results+n_op)->id && (data->results+n_op)->status == 'S'){
-            printf("Op %d com estado S foi recebida pelo cliente %d, encaminhada pelo proxy %d, e tratada pelo servidor %d! \n", 
+            printf("Op %d with status S was received by the client %d, forwarded by the proxy %d, and treated by the server %d! \n", 
             n_op, (data->results+n_op)->client, (data->results+n_op)->proxy, (data->results+n_op)->server);
 
         } else {
-            printf("Op %d ainda não é válido! \n", n_op);        
+            printf("Op %d not available yet! \n", n_op);        
         }
 
         semaphore_mutex_unlock(sems->results_mutex);
@@ -378,23 +377,23 @@ void wait_processes(struct main_data* data){
 */
 void write_statistics(struct main_data* data){
 
-    printf("\nTerminado o sovaccines! Imprimindo estatísticas: \n");
+    printf("\nTerminating sovaccines! Printing stats: \n");
 
     for(int i = 0; i < data->n_clients; i++){
 
-        printf("Cliente %d recebeu %d pedidos! \n", i, *(data->client_stats + i));
+        printf("Client %d received %d requests! \n", i, *(data->client_stats + i));
 
     }
 
     for(int i = 0; i < data->n_proxies; i++){
 
-        printf("Proxy %d encaminhou %d pedidos! \n", i, *(data->proxy_stats + i));
+        printf("Proxy %d forwarded %d requests! \n", i, *(data->proxy_stats + i));
 
     }
     
     for(int i = 0; i < data->n_servers; i++){
 
-        printf("Server %d respondeu %d pedidos! \n", i, *(data->server_stats + i)) ;
+        printf("Server %d responded %d requests! \n", i, *(data->server_stats + i)) ;
 
     }   
 

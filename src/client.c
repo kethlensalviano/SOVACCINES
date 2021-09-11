@@ -147,5 +147,5 @@ void client_process_answer(struct operation* op, struct main_data* data, struct 
     data->results[op->id] = *op;
     semaphore_mutex_unlock(sems->results_mutex);
 
-    printf("Pedido #%d concluído! É agora possível consultar! \n", op->id);
+    printf("Request #%d finished! It is now possible to consult! \n", op->id);
 };
