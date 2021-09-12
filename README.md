@@ -6,10 +6,10 @@
 
 ### 🏠 [Homepage](https://github.com/mariafls/SOVACCINES)
 
-## Install
+## Compile
 
 ```sh
-./bin/sovaccines filename
+make
 ```
 
 ## Usage
