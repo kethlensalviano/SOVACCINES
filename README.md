@@ -22,8 +22,8 @@
 
 👤 **Maria Silva, Kethlen Salviano, Tiago Badalo**
 
-* Github: [@mariafls, kethlensalviano, tiagobadalo10](https://github.com/mariafls, kethlensalviano, tiagobadalo10)
-* LinkedIn: [@in\/maria-silva-b8411156\/](https://linkedin.com/in/in\/maria-silva-b8411156\/)
+* Github: [@mariafls](https://github.com/mariafls) [@kethlensalviano](https://github.com/kethlensalviano) [@tiagobadalo10](https://github.com/tiagobadalo10)
+* LinkedIn: [@maria-silva](https://www.linkedin.com/in/maria-silva-b8411156/)
 
 ## Show your support
 
